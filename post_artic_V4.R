@@ -24,8 +24,8 @@ for( i in 1: length( sub_folder ) )
   
   path_sub_fd = list.files( sub_folder[i], full.names = TRUE )
   
-  path_vcf1       = grep( "_1.vcf$", path_sub_fd, value = TRUE )
-  path_vcf2       = grep( "_2.vcf$", path_sub_fd, value = TRUE )
+  path_vcf1       = grep( "1.vcf$", path_sub_fd, value = TRUE )
+  path_vcf2       = grep( "2.vcf$", path_sub_fd, value = TRUE )
   path_merged_vcf = grep( "merged.vcf$", path_sub_fd, value = TRUE )
   path_fail_vcf   = grep( "fail.vcf$", path_sub_fd, value = TRUE )
   path_primer_vcf = grep( "primers.vcf$", path_sub_fd, value = TRUE )
